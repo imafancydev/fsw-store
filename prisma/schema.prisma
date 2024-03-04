@@ -30,5 +30,6 @@ model Product{
   imageUrl String
   category Category @relation(fields: [categoryId], references: [id])
   categoryId String
+  HasDiscount Boolean @default(false)
   discountPercentage Int @default(0)
 }
