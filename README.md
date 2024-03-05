@@ -72,4 +72,3 @@ Este projeto está totalmente aberto a contribuições. Se você deseja colabora
 3. Faça suas alterações e adicione commits descritivos (seguindo o Conventional Commits, preferencialmente).
 
 4. Crie um pull request para a branch `main` deste repositório.
-
