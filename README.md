@@ -5,7 +5,6 @@ Começando
 Primeiro, execute o servidor de desenvolvimento:
 
 ```bash
-Copy code
 npm run dev
 # ou
 yarn dev
