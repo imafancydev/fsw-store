@@ -15,7 +15,7 @@ run dev
 ```
 Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
 
-Você pode começar a editar a página modificando app/page.tsx. A página será atualizada automaticamente conforme você editar o arquivo.
+Você pode começar a editar a página modificando `app/page.tsx`. A página será atualizada automaticamente conforme você editar o arquivo.
 
 Este projeto utiliza o  [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) para otimizar e carregar automaticamente a fonte Inter, uma fonte personalizada do Google.
 
