@@ -1,23 +1,6 @@
-Este é um projeto [Next.js](https://nextjs.org/) inicializado com o [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). 
+# Projeto Full Stack Week 2.0 💻
 
-Começando
-
-Primeiro, execute o servidor de desenvolvimento:
-
-```bash
-npm run dev
-# ou
-yarn dev
-# ou
-pnpm dev
-# ou
-run dev
-```
-Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
-
-Você pode começar a editar a página modificando app/page.tsx. A página será atualizada automaticamente conforme você editar o arquivo.
-
-Este projeto utiliza o  [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) para otimizar e carregar automaticamente a fonte Inter, uma fonte personalizada do Google.
+Este é o repositório oficial do e-commerce desenvolvido durante a Full Stack Week, um evento diferente de tudo que você já viu, com 4 lives de muito conteúdo. Nosso objetivo principal é criar um projeto altamente relevante, utilizando as tecnologias mais modernas e demandadas pelo mercado, a fim de adicionar autoridade ao currículo de desenvolvedor.
 
 ## Tecnologias Utilizadas 🚀
 
