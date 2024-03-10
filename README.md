@@ -1,6 +1,6 @@
 Este é um projeto [Next.js](https://nextjs.org/) inicializado com o [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). 
 
-Começando
+Começando 
 
 Primeiro, execute o servidor de desenvolvimento:
 
