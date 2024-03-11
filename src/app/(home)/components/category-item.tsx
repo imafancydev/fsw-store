@@ -18,7 +18,7 @@ interface CategoryItemProps {
 export const CategoryItem = ({ category }: CategoryItemProps) => {
   const categoryIcon = {
     keyboards: <KeyboardIcon size={16} />,
-    monitor: <MonitorIcon size={16} />,
+    monitors: <MonitorIcon size={16} />,
     headphones: <HeadphonesIcon size={16} />,
     mousepads: <SquareIcon size={16} />,
     speakers: <SpeakerIcon size={16} />,
