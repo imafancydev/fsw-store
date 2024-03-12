@@ -1,5 +1,3 @@
-"use client";
-
 import { Badge } from "@/components/ui/badge";
 import { Category } from "@prisma/client";
 import {
@@ -35,3 +33,5 @@ export const CategoryItem = ({ category }: CategoryItemProps) => {
     </Badge>
   );
 };
+
+export default CategoryItem;
