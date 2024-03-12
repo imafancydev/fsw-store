@@ -111,3 +111,5 @@ export const Header = (props: {}) => {
     </Card>
   );
 };
+
+export default Header;
