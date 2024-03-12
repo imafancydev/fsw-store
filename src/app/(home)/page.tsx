@@ -12,17 +12,17 @@ export default async function Home() {
     },
   });
   return (
-    <div className="p-5">
+    <div className="">
       <Image
         width={0}
         height={0}
         alt="Até 55% de desconto esse mês!"
         src="/banner-home-01.png"
         sizes="100vh"
-        className="h-auto w-full"
+        className="h-auto w-full px-5"
         priority={true}
       />
-      <div className="mt-6">
+      <div className="mt-6 px-5">
         <Categories />
       </div>
 
