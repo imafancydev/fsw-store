@@ -1,8 +1,9 @@
-import { Product } from "@prisma/client";
+import { ProductWithTotalPrice } from "@/helpers/product";
+
 import Image from "next/image";
 
 interface ProductItemProps {
-  product: Product;
+  product: ProductWithTotalPrice;
 }
 
 export const ProductItem = ({ product }: ProductItemProps) => {
