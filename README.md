@@ -1,24 +1,3 @@
-Este é um projeto [Next.js](https://nextjs.org/) inicializado com o [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). 
-
-Começando 
-
-Primeiro, execute o servidor de desenvolvimento:
-
-```bash
-npm run dev
-# ou
-yarn dev
-# ou
-pnpm dev
-# ou
-run dev
-```
-Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
-
-Você pode começar a editar a página modificando `app/page.tsx`. A página será atualizada automaticamente conforme você editar o arquivo.
-
-Este projeto utiliza o  [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) para otimizar e carregar automaticamente a fonte Inter, uma fonte personalizada do Google.
-
 ## Tecnologias Utilizadas 🚀
 
 - **React**: Uma biblioteca JavaScript popular para construir interfaces de usuário interativas.
@@ -72,3 +51,26 @@ Este projeto está totalmente aberto a contribuições. Se você deseja colabora
 3. Faça suas alterações e adicione commits descritivos (seguindo o Conventional Commits, preferencialmente).
 
 4. Crie um pull request para a branch `main` deste repositório.
+
+## Como rodar o projeto 
+
+Este é um projeto [Next.js](https://nextjs.org/) inicializado com o [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). 
+
+Começando 
+
+Primeiro, execute o servidor de desenvolvimento:
+
+```bash
+npm run dev
+# ou
+yarn dev
+# ou
+pnpm dev
+# ou
+run dev
+```
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
+
+Você pode começar a editar a página modificando `app/page.tsx`. A página será atualizada automaticamente conforme você editar o arquivo.
+
+Este projeto utiliza o  [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) para otimizar e carregar automaticamente a fonte Inter, uma fonte personalizada do Google.
