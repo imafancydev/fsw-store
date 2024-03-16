@@ -2,6 +2,8 @@ import Image from "next/image";
 import Categories from "./components/categories";
 import ProductList from "./components/product-list";
 import { prismaClient } from "@/lib/prisma";
+import SectionTile from "./components/section-title";
+import PromoBanner from "./components/promo-banner";
 
 export default async function Home() {
   const deals = await prismaClient.product.findMany({
@@ -11,15 +13,27 @@ export default async function Home() {
       },
     },
   });
+
+  const keyboards = await prismaClient.product.findMany({
+    where: {
+      category: {
+        slug: "keyboards",
+      },
+    },
+  });
+
+  const headphones = await prismaClient.product.findMany({
+    where: {
+      category: {
+        slug: "headphones",
+      },
+    },
+  });
   return (
-    <div className="">
-      <Image
-        width={0}
-        height={0}
+    <div>
+      <PromoBanner
         alt="Até 55% de desconto esse mês!"
         src="/banner-home-01.png"
-        sizes="100vh"
-        className="h-auto w-full px-5"
         priority={true}
       />
       <div className="mt-6 px-5">
@@ -27,19 +41,31 @@ export default async function Home() {
       </div>
 
       <div className="mt-6">
-        <p className="mb-3 pl-5 font-bold uppercase"> Ofertas</p>
+        <SectionTile>Ofertas</SectionTile>
         <ProductList products={deals} />
       </div>
 
-      <Image
-        width={0}
-        height={0}
+      <PromoBanner
         alt="Até 55% de desconto em mouses!"
         src="/banner-home-02.png"
-        sizes="100vh"
-        className="h-auto w-full px-5"
         priority={true}
       />
+
+      <div className="mt-6">
+        <SectionTile>Teclados</SectionTile>
+        <ProductList products={keyboards} />
+      </div>
+
+      <PromoBanner
+        alt="Até 55% de desconto em headsets!"
+        src="/banner-home-03.png"
+        priority={true}
+      />
+
+      <div className="mt-6">
+        <SectionTile>Fones</SectionTile>
+        <ProductList products={headphones} />
+      </div>
     </div>
   );
 }
