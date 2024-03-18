@@ -92,6 +92,10 @@ const ProductInfo = ({
         </div>
         <p className="text-xs font-bold">Frete grátis</p>
       </div>
+
+      <div className="mt-8">
+        <p className="font-bold uppercase">Produtos recomendados</p>
+      </div>
     </div>
   );
 };
