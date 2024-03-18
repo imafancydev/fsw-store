@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Categories from "./components/categories";
 import { prismaClient } from "@/lib/prisma";
-import SectionTile from "./components/section-title";
+import SectionTile from "@/components/ui/section-title";
 import PromoBanner from "./components/promo-banner";
 import ProductList from "@/components/ui/product-list";
 
