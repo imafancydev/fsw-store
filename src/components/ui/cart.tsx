@@ -45,44 +45,46 @@ const Cart = () => {
         </ScrollArea>
       </div>
 
-      <div className="flex flex-col gap-3">
-        <Separator />
+      {products.length > 0 && (
+        <div className="flex flex-col gap-3">
+          <Separator />
 
-        <div className="flex items-center justify-between text-xs">
-          <p>SubTotal</p>
-          <p>R$ {subTotal.toFixed(2)}</p>
+          <div className="flex items-center justify-between text-xs">
+            <p>SubTotal</p>
+            <p>R$ {subTotal.toFixed(2)}</p>
+          </div>
+
+          <Separator />
+
+          <div className="flex items-center justify-between text-xs">
+            <p>Entrega</p>
+            <p className="uppercase">Grátis</p>
+          </div>
+
+          <Separator />
+
+          <div className="flex items-center justify-between text-xs">
+            <p>Desconto</p>
+            <p className="line-through opacity-75">
+              R$ {totalDiscount.toFixed(2)}
+            </p>
+          </div>
+
+          <Separator />
+
+          <div className="flex items-center justify-between text-xs font-bold">
+            <p>Total</p>
+            <p>- R$ {total.toFixed(2)}</p>
+          </div>
+
+          <Button
+            onClick={handleFinishPurchaseClick}
+            className="mt-7 font-bold uppercase"
+          >
+            Finalizar Compra
+          </Button>
         </div>
-
-        <Separator />
-
-        <div className="flex items-center justify-between text-xs">
-          <p>Entrega</p>
-          <p className="uppercase">Grátis</p>
-        </div>
-
-        <Separator />
-
-        <div className="flex items-center justify-between text-xs">
-          <p>Desconto</p>
-          <p className="line-through opacity-75">
-            R$ {totalDiscount.toFixed(2)}
-          </p>
-        </div>
-
-        <Separator />
-
-        <div className="flex items-center justify-between text-xs font-bold">
-          <p>Total</p>
-          <p>- R$ {total.toFixed(2)}</p>
-        </div>
-
-        <Button
-          onClick={handleFinishPurchaseClick}
-          className="mt-7 font-bold uppercase"
-        >
-          Finalizar Compra
-        </Button>
-      </div>
+      )}
     </div>
   );
 };
